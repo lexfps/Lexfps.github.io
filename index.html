@@ -2,106 +2,338 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexis Coston| IT Portfolio</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Alexis Coston IT portfolio featuring IT support, networking, and cybersecurity projects."
+    >
+
+    <title>Alexis Coston | IT Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="logo" href="#home">Alexis Coston<span>.</span></a>
 
-    <h1>Alexis Coston</h1>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-    <p>IT Support • Networking • Security+</p>
+    <main>
 
-</header>
+        <section class="hero" id="home">
+            <div class="hero-content">
 
-<section>
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
 
-<h2>About Me</h2>
+                <h1>
+                    Hi, I’m <span>Alexis</span>
+                </h1>
 
-<p>
-I'm an aspiring IT Support professional with a Bachelor's degree in Management Information Systems and CompTIA Security+ 701 certification.
-I enjoy troubleshooting technical problems, building home labs, and expanding my knowledge of networking and Windows Server technologies.
-</p>
+                <h2>
+                    IT Support • Networking • Cybersecurity
+                </h2>
 
-</section>
+                <p class="hero-description">
+                    I’m an aspiring IT professional with a background in technical support, networking, and cybersecurity. 
+					I enjoy troubleshooting problems, building hands-on labs, and learning how technology supports business operations.
+                </p>
 
-<section>
+                <div class="hero-buttons">
+                    <a class="button primary-button" href="#projects">
+                        View My Projects
+                    </a>
 
-<h2>Projects</h2>
+                    <a class="button secondary-button" href="#">
+                        Download Resume
+                    </a>
+                </div>
 
-<div class="project">
+                <div class="quick-stats">
+                    <div class="stat-card">
+                        <strong>Security+</strong>
+                        <span>Certified</span>
+                    </div>
 
-<h3>Windows Server Active Directory Lab</h3>
+                    <div class="stat-card">
+                        <strong>Management Information Systems</strong>
+                        <span>Bachelor’s Degree</span>
+                    </div>
 
-<p>
-Built a Windows Server home lab featuring Active Directory, DNS, Group Policy, user management, account lockout policies, password policies, and mapped network drives.
-</p>
+                    <div class="stat-card">
+                        <strong>Hands-On</strong>
+                        <span>Home Labs</span>
+                    </div>
+                </div>
 
-<a href="ad-lab.html">View Project</a>
+            </div>
 
-</div>
+            <div class="hero-visual">
+                <div class="profile-orb">
+                    <div class="orb-inner">
+                        <span>AC</span>
+                    </div>
+                </div>
 
-<div class="project">
+                <div class="floating-tag tag-one">Active Directory</div>
+                <div class="floating-tag tag-two">Networking</div>
+                <div class="floating-tag tag-three">Security+</div>
+            </div>
+        </section>
 
-<h3>Enterprise Office Network (Packet Tracer)</h3>
+        <section class="section" id="about">
+            <div class="section-heading">
+                <p class="section-label">ABOUT ME</p>
+                <h2>Building practical IT experience</h2>
+            </div>
 
-<p><strong>Status:</strong> In Progress</p>
+            <div class="about-card">
+                <p>
+                    I have earned my bachelor’s degree in Management Information
+                    Systems and hold the CompTIA Security+ 701 certification.
+                    My experience includes technical troubleshooting,
+                    networking exposure, user support, business systems,
+                    documentation, and process improvement.
+                </p>
 
-<p>
-Designing a small office network using Cisco Packet Tracer with routers, switches, static routing, and multiple LANs.
-Currently expanding the project with VLANs and DHCP.
-</p>
+                <p>
+                    I am continuing to build my technical skills through
+                    Windows Server, Active Directory, Cisco Packet Tracer,
+                    networking, and cybersecurity projects.
+                </p>
+            </div>
+        </section>
 
-<a href="#">View Project</a>
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="section-label">FEATURED WORK</p>
+                <h2>Projects</h2>
+            </div>
 
-</div>
+            <div class="project-grid">
 
-</section>
+                <article class="project-card">
+                    <div class="project-icon">🖥️</div>
 
-<section>
+                    <div class="project-status complete">
+                        Complete
+                    </div>
 
-<h2>Certifications</h2>
+                    <h3>Windows Server Active Directory Lab</h3>
 
-<ul>
+                    <p>
+                        Built a Windows Server home lab featuring Active
+                        Directory Domain Services, DNS, Group Policy,
+                        user administration, account security policies,
+                        domain authentication, and mapped network drives.
+                    </p>
 
-<li>CompTIA Security+</li>
+                    <div class="project-tags">
+                        <span>Windows Server</span>
+                        <span>AD DS</span>
+                        <span>DNS</span>
+                        <span>Group Policy</span>
+                    </div>
 
-</ul>
+                    <a class="project-link" href="ad-lab.html">
+                        View Project →
+                    </a>
+                </article>
 
-</section>
+                <article class="project-card">
+                    <div class="project-icon">🌐</div>
 
-<section>
+                    <div class="project-status progress">
+                        In Progress
+                    </div>
 
-<h2>Resume</h2>
+                    <h3>Enterprise Office Network</h3>
 
-<a href="#">Download Resume</a>
+                    <p>
+                        Designing a simulated office network in Cisco Packet
+                        Tracer using routers, switches, multiple LANs,
+                        static IP addressing, routing, and connectivity
+                        testing.
+                    </p>
 
-</section>
+                    <div class="project-tags">
+                        <span>Cisco</span>
+                        <span>Packet Tracer</span>
+                        <span>Routing</span>
+                        <span>LAN</span>
+                    </div>
 
-<section>
+                    <a class="project-link" href="packet-tracer.html">
+                        View Project →
+                    </a>
+                </article>
 
-<h2>Contact</h2>
+            </div>
+        </section>
 
-<p>Email: acoston121@gmail.com</p>
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <p class="section-label">TECHNICAL SKILLS</p>
+                <h2>Skills and tools</h2>
+            </div>
 
-<p>GitHub:
-<a href="https://github.com/lexfps">
-github.com/lexfps
-</a>
-</p>
+            <div class="skills-grid">
 
-</section>
+                <div class="skill-card">
+                    <div class="skill-icon">🪟</div>
+                    <h3>Windows Support</h3>
+                    <p>
+                        Windows troubleshooting, system configuration,
+                        user support, and account administration.
+                    </p>
+                </div>
 
-<footer>
+                <div class="skill-card">
+                    <div class="skill-icon">🗂️</div>
+                    <h3>Active Directory</h3>
+                    <p>
+                        Users, groups, Group Policy, authentication,
+                        security policies, and shared resources.
+                    </p>
+                </div>
 
-<p>© 2026 Alexis Coston</p>
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Networking</h3>
+                    <p>
+                        TCP/IP, routers, switches, LANs, static routing,
+                        DNS, DHCP concepts, and troubleshooting.
+                    </p>
+                </div>
 
-</footer>
+                <div class="skill-card">
+                    <div class="skill-icon">🔐</div>
+                    <h3>Cybersecurity</h3>
+                    <p>
+                        Security fundamentals, access control,
+                        risk management, network security, and Security+.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Technical Support</h3>
+                    <p>
+                        Troubleshooting hardware, software, user access,
+                        connectivity, and application issues.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3>Business Systems</h3>
+                    <p>
+                        Excel, data management, documentation,
+                        reporting, and process improvement.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="section-heading">
+                <p class="section-label">BACKGROUND</p>
+                <h2>Education and certifications</h2>
+            </div>
+
+            <div class="education-grid">
+
+                <div class="education-card">
+                    <span class="card-type">Education</span>
+
+                    <h3>Bachelor’s Degree</h3>
+
+                    <p class="education-title">
+                        Management Information Systems
+                    </p>
+
+                    <p>
+                        Coursework included networking, cybersecurity,
+                        database management, systems analysis,
+                        programming, and information technology management.
+                    </p>
+                </div>
+
+                <div class="education-card">
+                    <span class="card-type">Certification</span>
+
+                    <h3>CompTIA Security+</h3>
+
+                    <p class="education-title">
+                        Active Certification
+                    </p>
+
+                    <p>
+                        Demonstrates knowledge of security operations,
+                        threats, vulnerabilities, access control,
+                        risk management, and network security.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="contact-card">
+                <p class="section-label">CONTACT</p>
+
+                <h2>Let’s connect</h2>
+
+                <p>
+                    I am currently seeking opportunities in IT support,
+                    desktop support, networking, and related technical roles.
+                </p>
+
+                <div class="contact-links">
+                    <a href="mailto:your-email@example.com">
+                        Email
+                    </a>
+
+                    <a
+                        href="https://github.com/lexfps"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        href="www.linkedin.com/in/alexis-coston-0259b5356"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Alexis. Built with HTML and CSS.</p>
+    </footer>
 
 </body>
-
 </html>
