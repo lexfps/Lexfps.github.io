@@ -2026,6 +2026,89 @@
         </p>
 
     </footer>
+<!-- =====================================================
+     IMAGE LIGHTBOX
+     ===================================================== -->
+
+<div class="image-lightbox" id="imageLightbox">
+
+    <button
+        class="lightbox-close"
+        id="lightboxClose"
+        aria-label="Close enlarged image"
+    >
+        &times;
+    </button>
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt=""
+    >
+
+</div>
+
+
+<script>
+    const lightbox = document.getElementById("imageLightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxClose = document.getElementById("lightboxClose");
+
+    const galleryImages = document.querySelectorAll(
+        ".gallery-card img, .ticket-image img"
+    );
+
+    galleryImages.forEach((image) => {
+
+        image.addEventListener("click", () => {
+
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt;
+
+            lightbox.classList.add("active");
+            document.body.classList.add("lightbox-open");
+
+        });
+
+    });
+
+
+    function closeLightbox() {
+
+        lightbox.classList.remove("active");
+        document.body.classList.remove("lightbox-open");
+
+        lightboxImage.src = "";
+
+    }
+
+
+    lightboxClose.addEventListener("click", closeLightbox);
+
+
+    lightbox.addEventListener("click", (event) => {
+
+        if (
+            event.target === lightbox ||
+            event.target === lightboxImage
+        ) {
+            closeLightbox();
+        }
+
+    });
+
+
+    document.addEventListener("keydown", (event) => {
+
+        if (
+            event.key === "Escape" &&
+            lightbox.classList.contains("active")
+        ) {
+            closeLightbox();
+        }
+
+    });
+</script>
 
 </body>
 

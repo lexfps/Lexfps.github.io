@@ -1876,3 +1876,80 @@ footer {
     pointer-events: none;
     user-select: none;
 }
+
+/* =========================================================
+   IMAGE LIGHTBOX / CLICK TO ENLARGE
+   ========================================================= */
+
+.gallery-card img,
+.ticket-image img {
+    cursor: zoom-in;
+}
+
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+
+    background: rgba(2, 6, 23, 0.92);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.image-lightbox.active {
+    display: flex;
+}
+
+.image-lightbox img {
+    display: block;
+
+    max-width: 92vw;
+    max-height: 90vh;
+
+    object-fit: contain;
+
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 14px;
+
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.65),
+        0 0 35px rgba(56, 189, 248, 0.12);
+
+    cursor: zoom-out;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 22px;
+    right: 30px;
+
+    border: none;
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 2.2rem;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.lightbox-close:hover {
+    color: var(--cyan);
+    transform: scale(1.1);
+}
+
+body.lightbox-open {
+    overflow: hidden;
+}
