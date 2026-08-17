@@ -786,908 +786,1037 @@
         </section>
 
 
-        <section class="project-section">
+<section class="project-section">
 
-            <p class="section-label">
-                Tier 1 Simulation
-            </p>
+    <p class="section-label">
+        Tier 1 Simulation
+    </p>
 
-            <h2>
-                Help Desk Scenarios
-            </h2>
+    <h2>
+        Help Desk Scenarios
+    </h2>
 
-            <p class="gallery-introduction">
-                After completing the environment, I intentionally
-                simulated common support issues and documented the
-                troubleshooting and resolution process for each
-                scenario. Select a ticket below to view the full workflow.
-            </p>
-
-
-            <div class="ticket-accordion">
-
-                <details class="ticket-dropdown">
-
-                    <summary>
-
-                        <div class="ticket-summary-info">
-                            <span class="ticket-number">
-                                Ticket 01
-                            </span>
-
-                            <h3>
-                                Forgotten Password
-                            </h3>
-                        </div>
-
-                        <span class="ticket-arrow">
-                            +
-                        </span>
-
-                    </summary>
+    <p class="gallery-introduction">
+        After completing the environment, I intentionally
+        simulated common support issues and documented the
+        troubleshooting and resolution process for each
+        scenario. Select a ticket below to view the full workflow.
+    </p>
 
 
-                    <div class="ticket-dropdown-content">
+    <div class="ticket-accordion">
 
-                        <div class="ticket-details">
+        <!-- =====================================================
+             TICKET 01 - FORGOTTEN PASSWORD
+             ===================================================== -->
 
-                            <div class="ticket-detail">
+        <details class="ticket-dropdown">
 
-                                <strong>
-                                    Issue
-                                </strong>
+            <summary>
 
-                                <p>
-                                    Domain user could not authenticate
-                                    after forgetting their password.
-                                </p>
+                <div class="ticket-summary-info">
 
-                            </div>
+                    <span class="ticket-number">
+                        Ticket 01
+                    </span>
 
+                    <h3>
+                        Forgotten Password
+                    </h3>
 
-                            <div class="ticket-detail">
+                </div>
 
-                                <strong>
-                                    Resolution
-                                </strong>
+                <span class="ticket-arrow">
+                    +
+                </span>
 
-                                <p>
-                                    Reset the password through Active
-                                    Directory Users and Computers and
-                                    required a password change at next logon.
-                                </p>
-
-                            </div>
+            </summary>
 
 
-                            <div class="ticket-detail">
+            <div class="ticket-dropdown-content">
 
-                                <strong>
-                                    Verification
-                                </strong>
+                <div class="ticket-details">
 
-                                <p>
-                                    Confirmed the password-change requirement
-                                    and verified successful domain login
-                                    using the new credentials.
-                                </p>
+                    <div class="ticket-detail">
 
-                            </div>
+                        <strong>
+                            Issue
+                        </strong>
 
-                        </div>
-
-
-                        <div class="ticket-gallery">
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/01-User-Forgot-Password/ticket-01-password-reset-login-error-01.JPG"
-                                    alt="User unable to authenticate with incorrect password"
-                                >
-
-                                <figcaption>
-                                    Reproduced the reported authentication
-                                    issue on CLIENT01.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/01-User-Forgot-Password/ticket-01-password-reset-ad-reset-02.JPG"
-                                    alt="Password reset through Active Directory Users and Computers"
-                                >
-
-                                <figcaption>
-                                    Reset the user's domain password and
-                                    required a password change at next logon.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/01-User-Forgot-Password/ticket-01-password-reset-change-password-03.JPG"
-                                    alt="Windows requiring password change before sign in"
-                                >
-
-                                <figcaption>
-                                    Verified that the temporary-password
-                                    requirement was enforced.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/01-User-Forgot-Password/ticket-01-password-reset-successful-login-04.JPG"
-                                    alt="Successful login after password reset"
-                                >
-
-                                <figcaption>
-                                    Confirmed successful authentication
-                                    after the password change.
-                                </figcaption>
-
-                            </figure>
-
-                        </div>
+                        <p>
+                            Domain user could not authenticate
+                            after forgetting their password.
+                        </p>
 
                     </div>
 
-                </details>
 
+                    <div class="ticket-detail">
 
-                <details class="ticket-dropdown">
+                        <strong>
+                            Resolution
+                        </strong>
 
-                    <summary>
-
-                        <div class="ticket-summary-info">
-
-                            <span class="ticket-number">
-                                Ticket 02
-                            </span>
-
-                            <h3>
-                                Account Lockout
-                            </h3>
-
-                        </div>
-
-                        <span class="ticket-arrow">
-                            +
-                        </span>
-
-                    </summary>
-
-
-                    <div class="ticket-dropdown-content">
-
-                        <div class="ticket-details">
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Issue
-                                </strong>
-
-                                <p>
-                                    User account became locked after
-                                    multiple unsuccessful login attempts.
-                                </p>
-
-                            </div>
-
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Resolution
-                                </strong>
-
-                                <p>
-                                    Located the account in Active Directory,
-                                    confirmed the lockout, and manually
-                                    unlocked the account.
-                                </p>
-
-                            </div>
-
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Verification
-                                </strong>
-
-                                <p>
-                                    Confirmed that the user could
-                                    successfully authenticate again.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="ticket-gallery">
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/02-Account-Lockout/ticket-02-account-lockout-01.JPG"
-                                    alt="Windows account lockout message"
-                                >
-
-                                <figcaption>
-                                    Confirmed that the account was locked
-                                    after multiple failed authentication attempts.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/02-Account-Lockout/ticket-02-account-lockout-02.JPG"
-                                    alt="Active Directory account unlock option"
-                                >
-
-                                <figcaption>
-                                    Identified the locked account in ADUC
-                                    and restored account access.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/02-Account-Lockout/ticket-02-account-lockout-03.JPG"
-                                    alt="User successfully logged in after account unlock"
-                                >
-
-                                <figcaption>
-                                    Verified successful authentication
-                                    after the account was unlocked.
-                                </figcaption>
-
-                            </figure>
-
-                        </div>
+                        <p>
+                            Reset the password through Active
+                            Directory Users and Computers and
+                            required a password change at next logon.
+                        </p>
 
                     </div>
 
-                </details>
 
+                    <div class="ticket-detail">
 
-                <details class="ticket-dropdown">
+                        <strong>
+                            Verification
+                        </strong>
 
-                    <summary>
-
-                        <div class="ticket-summary-info">
-
-                            <span class="ticket-number">
-                                Ticket 03
-                            </span>
-
-                            <h3>
-                                Employee Offboarding
-                            </h3>
-
-                        </div>
-
-                        <span class="ticket-arrow">
-                            +
-                        </span>
-
-                    </summary>
-
-
-                    <div class="ticket-dropdown-content">
-
-                        <div class="ticket-details">
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Request
-                                </strong>
-
-                                <p>
-                                    Employee account required deactivation
-                                    and removal of existing department access.
-                                </p>
-
-                            </div>
-
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Resolution
-                                </strong>
-
-                                <p>
-                                    Disabled the Active Directory account,
-                                    moved it to the Disabled Users OU,
-                                    and removed department security-group
-                                    membership.
-                                </p>
-
-                            </div>
-
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Result
-                                </strong>
-
-                                <p>
-                                    Account was deactivated and access
-                                    associated with the employee's former
-                                    department was removed.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="ticket-gallery">
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/03-Disabled-Account/ticket-03-offboarding-01.JPG"
-                                    alt="Active Directory user account disabled"
-                                >
-
-                                <figcaption>
-                                    Disabled the employee's domain account
-                                    to prevent further authentication.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/03-Disabled-Account/ticket-03-offboarding-02.JPG"
-                                    alt="Account moved to Disabled Users OU"
-                                >
-
-                                <figcaption>
-                                    Moved the account into the Disabled Users
-                                    organizational unit.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/03-Disabled-Account/ticket-03-offboarding-03.JPG"
-                                    alt="Removing employee from department security group"
-                                >
-
-                                <figcaption>
-                                    Removed the employee from the department
-                                    security group to revoke role-based access.
-                                </figcaption>
-
-                            </figure>
-
-                        </div>
+                        <p>
+                            Confirmed the password-change requirement
+                            and verified successful domain login
+                            using the new credentials.
+                        </p>
 
                     </div>
 
-                </details>
+                </div>
 
 
-                <details class="ticket-dropdown">
+                <div class="ticket-gallery">
 
-                    <summary>
+                    <figure class="ticket-image">
 
-                        <div class="ticket-summary-info">
-
-                            <span class="ticket-number">
-                                Ticket 04
-                            </span>
-
-                            <h3>
-                                New Employee Onboarding
-                            </h3>
-
-                        </div>
-
-                        <span class="ticket-arrow">
-                            +
+                        <span class="ticket-step">
+                            STEP 01
                         </span>
 
-                    </summary>
+                        <img
+                            src="images/helpdesk-tickets/01-User-Forgot-Password/ticket-01-password-reset-login-error-01.JPG"
+                            alt="User unable to authenticate with incorrect password"
+                        >
+
+                        <figcaption>
+                            Reproduced the reported authentication
+                            issue on CLIENT01.
+                        </figcaption>
+
+                    </figure>
 
 
-                    <div class="ticket-dropdown-content">
+                    <figure class="ticket-image">
 
-                        <div class="ticket-details">
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Request
-                                </strong>
-
-                                <p>
-                                    New IT employee required a domain
-                                    account and access to appropriate
-                                    department resources.
-                                </p>
-
-                            </div>
-
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Configuration
-                                </strong>
-
-                                <p>
-                                    Created the account in the IT OU,
-                                    assigned GG_IT_Users membership,
-                                    and configured domain authentication.
-                                </p>
-
-                            </div>
-
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Verification
-                                </strong>
-
-                                <p>
-                                    Confirmed successful login, access
-                                    to the IT share, and denial of
-                                    unauthorized HR resources.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="ticket-gallery">
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-create-user-01.JPG"
-                                    alt="Creating Miles Morales Active Directory account"
-                                >
-
-                                <figcaption>
-                                    Created the new employee account
-                                    in the IT organizational unit.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-add-security-group-02.JPG"
-                                    alt="Adding new employee to IT security group"
-                                >
-
-                                <figcaption>
-                                    Added the employee to GG_IT_Users
-                                    for role-based department access.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-domain-login-03.JPG"
-                                    alt="New employee successfully logged in to CLIENT01"
-                                >
-
-                                <figcaption>
-                                    Verified successful Active Directory
-                                    authentication from CLIENT01.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-it-drive-access-04.JPG"
-                                    alt="New employee accessing IT department mapped drive"
-                                >
-
-                                <figcaption>
-                                    Confirmed access to the mapped
-                                    IT Department network drive.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-hr-access-denied-05.JPG"
-                                    alt="IT employee denied access to HR shared folder"
-                                >
-
-                                <figcaption>
-                                    Verified least-privilege access by
-                                    confirming the IT employee could not
-                                    access the restricted HR share.
-                                </figcaption>
-
-                            </figure>
-
-                        </div>
-
-                    </div>
-
-                </details>
-
-
-                <details class="ticket-dropdown">
-
-                    <summary>
-
-                        <div class="ticket-summary-info">
-
-                            <span class="ticket-number">
-                                Ticket 05
-                            </span>
-
-                            <h3>
-                                DNS Resolution Issue
-                            </h3>
-
-                        </div>
-
-                        <span class="ticket-arrow">
-                            +
+                        <span class="ticket-step">
+                            STEP 02
                         </span>
 
-                    </summary>
+                        <img
+                            src="images/helpdesk-tickets/01-User-Forgot-Password/ticket-01-password-reset-ad-reset-02.JPG"
+                            alt="Password reset through Active Directory Users and Computers"
+                        >
+
+                        <figcaption>
+                            Reset the user's domain password and
+                            required a password change at next logon.
+                        </figcaption>
+
+                    </figure>
 
 
-                    <div class="ticket-dropdown-content">
+                    <figure class="ticket-image">
 
-                        <div class="ticket-details">
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Issue
-                                </strong>
-
-                                <p>
-                                    CLIENT01 was unable to resolve
-                                    the domain controller hostname.
-                                </p>
-
-                            </div>
-
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Troubleshooting
-                                </strong>
-
-                                <p>
-                                    Used nslookup and network settings
-                                    to identify an incorrect DNS server
-                                    configured on the client.
-                                </p>
-
-                            </div>
-
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Resolution
-                                </strong>
-
-                                <p>
-                                    Restored 192.168.10.10 as the DNS
-                                    server and verified successful
-                                    name resolution to DC01.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="ticket-gallery">
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/05-DNS-Issue/ticket-05-dns-wrong-server-01.JPG"
-                                    alt="CLIENT01 configured with incorrect DNS server"
-                                >
-
-                                <figcaption>
-                                    Simulated the issue by configuring
-                                    CLIENT01 with an incorrect DNS server.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/05-DNS-Issue/ticket-05-dns-lookup-failed-02.JPG"
-                                    alt="DNS lookup failing in nslookup"
-                                >
-
-                                <figcaption>
-                                    Used nslookup to verify that DNS
-                                    name resolution was failing.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/05-DNS-Issue/ticket-05-dns-correct-server-03.JPG"
-                                    alt="Correct DNS server restored on CLIENT01"
-                                >
-
-                                <figcaption>
-                                    Corrected the client DNS configuration
-                                    to point to DC01 at 192.168.10.10.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/05-DNS-Issue/ticket-05-dns-lookup-success-04.JPG"
-                                    alt="Successful DNS lookup after troubleshooting"
-                                >
-
-                                <figcaption>
-                                    Verified successful resolution of
-                                    dc01.corp.alexislab.local after
-                                    correcting the configuration.
-                                </figcaption>
-
-                            </figure>
-
-                        </div>
-
-                    </div>
-
-                </details>
-
-
-                <details class="ticket-dropdown">
-
-                    <summary>
-
-                        <div class="ticket-summary-info">
-
-                            <span class="ticket-number">
-                                Ticket 06
-                            </span>
-
-                            <h3>
-                                Shared Folder Access / Group Membership
-                            </h3>
-
-                        </div>
-
-                        <span class="ticket-arrow">
-                            +
+                        <span class="ticket-step">
+                            STEP 03
                         </span>
 
-                    </summary>
+                        <img
+                            src="images/helpdesk-tickets/01-User-Forgot-Password/ticket-01-password-reset-change-password-03.JPG"
+                            alt="Windows requiring password change before sign in"
+                        >
+
+                        <figcaption>
+                            Verified that the temporary-password
+                            requirement was enforced.
+                        </figcaption>
+
+                    </figure>
 
 
-                    <div class="ticket-dropdown-content">
+                    <figure class="ticket-image">
 
-                        <div class="ticket-details">
+                        <span class="ticket-step">
+                            STEP 04
+                        </span>
 
-                            <div class="ticket-detail">
+                        <img
+                            src="images/helpdesk-tickets/01-User-Forgot-Password/ticket-01-password-reset-successful-login-04.JPG"
+                            alt="Successful login after password reset"
+                        >
 
-                                <strong>
-                                    Issue
-                                </strong>
+                        <figcaption>
+                            Confirmed successful authentication
+                            after the password change.
+                        </figcaption>
 
-                                <p>
-                                    Finance user was unable to access
-                                    the department shared folder.
-                                </p>
+                    </figure>
 
-                            </div>
-
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Troubleshooting
-                                </strong>
-
-                                <p>
-                                    Reviewed Active Directory group
-                                    membership and determined that the
-                                    user was missing GG_Finance_Users.
-                                </p>
-
-                            </div>
-
-
-                            <div class="ticket-detail">
-
-                                <strong>
-                                    Resolution
-                                </strong>
-
-                                <p>
-                                    Restored the security-group membership,
-                                    refreshed the user's authentication
-                                    session, and verified access.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="ticket-gallery">
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-group-membership-remove-user-01.JPG"
-                                    alt="Removing user from Finance security group for lab simulation"
-                                >
-
-                                <figcaption>
-                                    Lab setup: removed the Finance security
-                                    group to simulate an incorrect
-                                    membership configuration.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-user-login-02.JPG"
-                                    alt="Finance user logged into CLIENT01"
-                                >
-
-                                <figcaption>
-                                    Authenticated as the affected user
-                                    on CLIENT01.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-shared-folder-access-denied-03.JPG"
-                                    alt="Finance user denied access to shared folder"
-                                >
-
-                                <figcaption>
-                                    Confirmed the reported issue by
-                                    reproducing the Finance share access failure.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-verify-missing-group-membership-04.JPG"
-                                    alt="Finance security group missing from user membership"
-                                >
-
-                                <figcaption>
-                                    Reviewed the user's account and identified
-                                    the missing Finance security-group membership.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-restore-group-membership-05.JPG"
-                                    alt="Finance security group restored in Active Directory"
-                                >
-
-                                <figcaption>
-                                    Restored GG_Finance_Users membership
-                                    to the affected account.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-verify-group-membership-06.JPG"
-                                    alt="Finance group verified using whoami groups"
-                                >
-
-                                <figcaption>
-                                    Reauthenticated and used whoami /groups
-                                    to verify that the updated Windows
-                                    security token included the Finance group.
-                                </figcaption>
-
-                            </figure>
-
-
-                            <figure class="ticket-image">
-
-                                <img
-                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-shared-folder-access-restored-07.JPG"
-                                    alt="Finance shared folder access successfully restored"
-                                >
-
-                                <figcaption>
-                                    Confirmed that the user could access
-                                    the Finance departmental share again.
-                                </figcaption>
-
-                            </figure>
-
-                        </div>
-
-                    </div>
-
-                </details>
+                </div>
 
             </div>
 
-        </section>
+        </details>
 
+
+        <!-- =====================================================
+             TICKET 02 - ACCOUNT LOCKOUT
+             ===================================================== -->
+
+        <details class="ticket-dropdown">
+
+            <summary>
+
+                <div class="ticket-summary-info">
+
+                    <span class="ticket-number">
+                        Ticket 02
+                    </span>
+
+                    <h3>
+                        Account Lockout
+                    </h3>
+
+                </div>
+
+                <span class="ticket-arrow">
+                    +
+                </span>
+
+            </summary>
+
+
+            <div class="ticket-dropdown-content">
+
+                <div class="ticket-details">
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Issue
+                        </strong>
+
+                        <p>
+                            User account became locked after
+                            multiple unsuccessful login attempts.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Resolution
+                        </strong>
+
+                        <p>
+                            Located the account in Active Directory,
+                            confirmed the lockout, and manually
+                            unlocked the account.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Verification
+                        </strong>
+
+                        <p>
+                            Confirmed that the user could
+                            successfully authenticate again.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ticket-gallery">
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 01
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/02-Account-Lockout/ticket-02-account-lockout-01.JPG"
+                            alt="Windows account lockout message"
+                        >
+
+                        <figcaption>
+                            Confirmed that the account was locked
+                            after multiple failed authentication attempts.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 02
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/02-Account-Lockout/ticket-02-account-lockout-02.JPG"
+                            alt="Active Directory account unlock option"
+                        >
+
+                        <figcaption>
+                            Identified the locked account in ADUC
+                            and restored account access.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 03
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/02-Account-Lockout/ticket-02-account-lockout-03.JPG"
+                            alt="User successfully logged in after account unlock"
+                        >
+
+                        <figcaption>
+                            Verified successful authentication
+                            after the account was unlocked.
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </details>
+
+
+        <!-- =====================================================
+             TICKET 03 - EMPLOYEE OFFBOARDING
+             ===================================================== -->
+
+        <details class="ticket-dropdown">
+
+            <summary>
+
+                <div class="ticket-summary-info">
+
+                    <span class="ticket-number">
+                        Ticket 03
+                    </span>
+
+                    <h3>
+                        Employee Offboarding
+                    </h3>
+
+                </div>
+
+                <span class="ticket-arrow">
+                    +
+                </span>
+
+            </summary>
+
+
+            <div class="ticket-dropdown-content">
+
+                <div class="ticket-details">
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Request
+                        </strong>
+
+                        <p>
+                            Employee account required deactivation
+                            and removal of existing department access.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Resolution
+                        </strong>
+
+                        <p>
+                            Disabled the Active Directory account,
+                            moved it to the Disabled Users OU,
+                            and removed department security-group
+                            membership.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Result
+                        </strong>
+
+                        <p>
+                            Account was deactivated and access
+                            associated with the employee's former
+                            department was removed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ticket-gallery">
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 01
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/03-Disabled-Account/ticket-03-offboarding-01.JPG"
+                            alt="Active Directory user account disabled"
+                        >
+
+                        <figcaption>
+                            Disabled the employee's domain account
+                            to prevent further authentication.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 02
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/03-Disabled-Account/ticket-03-offboarding-02.JPG"
+                            alt="Account moved to Disabled Users OU"
+                        >
+
+                        <figcaption>
+                            Moved the account into the Disabled Users
+                            organizational unit.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 03
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/03-Disabled-Account/ticket-03-offboarding-03.JPG"
+                            alt="Removing employee from department security group"
+                        >
+
+                        <figcaption>
+                            Removed the employee from the department
+                            security group to revoke role-based access.
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </details>
+
+
+        <!-- =====================================================
+             TICKET 04 - NEW EMPLOYEE ONBOARDING
+             ===================================================== -->
+
+        <details class="ticket-dropdown">
+
+            <summary>
+
+                <div class="ticket-summary-info">
+
+                    <span class="ticket-number">
+                        Ticket 04
+                    </span>
+
+                    <h3>
+                        New Employee Onboarding
+                    </h3>
+
+                </div>
+
+                <span class="ticket-arrow">
+                    +
+                </span>
+
+            </summary>
+
+
+            <div class="ticket-dropdown-content">
+
+                <div class="ticket-details">
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Request
+                        </strong>
+
+                        <p>
+                            New IT employee required a domain
+                            account and access to appropriate
+                            department resources.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Configuration
+                        </strong>
+
+                        <p>
+                            Created the account in the IT OU,
+                            assigned GG_IT_Users membership,
+                            and configured domain authentication.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Verification
+                        </strong>
+
+                        <p>
+                            Confirmed successful login, access
+                            to the IT share, and denial of
+                            unauthorized HR resources.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ticket-gallery">
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 01
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-create-user-01.JPG"
+                            alt="Creating Miles Morales Active Directory account"
+                        >
+
+                        <figcaption>
+                            Created the new employee account
+                            in the IT organizational unit.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 02
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-add-security-group-02.JPG"
+                            alt="Adding new employee to IT security group"
+                        >
+
+                        <figcaption>
+                            Added the employee to GG_IT_Users
+                            for role-based department access.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 03
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-domain-login-03.JPG"
+                            alt="New employee successfully logged in to CLIENT01"
+                        >
+
+                        <figcaption>
+                            Verified successful Active Directory
+                            authentication from CLIENT01.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 04
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-it-drive-access-04.JPG"
+                            alt="New employee accessing IT department mapped drive"
+                        >
+
+                        <figcaption>
+                            Confirmed access to the mapped
+                            IT Department network drive.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 05
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-hr-access-denied-05.JPG"
+                            alt="IT employee denied access to HR shared folder"
+                        >
+
+                        <figcaption>
+                            Verified least-privilege access by
+                            confirming the IT employee could not
+                            access the restricted HR share.
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </details>
+
+
+        <!-- =====================================================
+             TICKET 05 - DNS RESOLUTION ISSUE
+             ===================================================== -->
+
+        <details class="ticket-dropdown">
+
+            <summary>
+
+                <div class="ticket-summary-info">
+
+                    <span class="ticket-number">
+                        Ticket 05
+                    </span>
+
+                    <h3>
+                        DNS Resolution Issue
+                    </h3>
+
+                </div>
+
+                <span class="ticket-arrow">
+                    +
+                </span>
+
+            </summary>
+
+
+            <div class="ticket-dropdown-content">
+
+                <div class="ticket-details">
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Issue
+                        </strong>
+
+                        <p>
+                            CLIENT01 was unable to resolve
+                            the domain controller hostname.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Troubleshooting
+                        </strong>
+
+                        <p>
+                            Used nslookup and network settings
+                            to identify an incorrect DNS server
+                            configured on the client.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Resolution
+                        </strong>
+
+                        <p>
+                            Restored 192.168.10.10 as the DNS
+                            server and verified successful
+                            name resolution to DC01.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ticket-gallery">
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 01
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/05-DNS-Issue/ticket-05-dns-wrong-server-01.JPG"
+                            alt="CLIENT01 configured with incorrect DNS server"
+                        >
+
+                        <figcaption>
+                            Simulated the issue by configuring
+                            CLIENT01 with an incorrect DNS server.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 02
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/05-DNS-Issue/ticket-05-dns-lookup-failed-02.JPG"
+                            alt="DNS lookup failing in nslookup"
+                        >
+
+                        <figcaption>
+                            Used nslookup to verify that DNS
+                            name resolution was failing.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 03
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/05-DNS-Issue/ticket-05-dns-correct-server-03.JPG"
+                            alt="Correct DNS server restored on CLIENT01"
+                        >
+
+                        <figcaption>
+                            Corrected the client DNS configuration
+                            to point to DC01 at 192.168.10.10.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 04
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/05-DNS-Issue/ticket-05-dns-lookup-success-04.JPG"
+                            alt="Successful DNS lookup after troubleshooting"
+                        >
+
+                        <figcaption>
+                            Verified successful resolution of
+                            dc01.corp.alexislab.local after
+                            correcting the configuration.
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </details>
+
+
+        <!-- =====================================================
+             TICKET 06 - GROUP MEMBERSHIP
+             ===================================================== -->
+
+        <details class="ticket-dropdown">
+
+            <summary>
+
+                <div class="ticket-summary-info">
+
+                    <span class="ticket-number">
+                        Ticket 06
+                    </span>
+
+                    <h3>
+                        Shared Folder Access / Group Membership
+                    </h3>
+
+                </div>
+
+                <span class="ticket-arrow">
+                    +
+                </span>
+
+            </summary>
+
+
+            <div class="ticket-dropdown-content">
+
+                <div class="ticket-details">
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Issue
+                        </strong>
+
+                        <p>
+                            Finance user was unable to access
+                            the department shared folder.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Troubleshooting
+                        </strong>
+
+                        <p>
+                            Reviewed Active Directory group
+                            membership and determined that the
+                            user was missing GG_Finance_Users.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ticket-detail">
+
+                        <strong>
+                            Resolution
+                        </strong>
+
+                        <p>
+                            Restored the security-group membership,
+                            refreshed the user's authentication
+                            session, and verified access.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ticket-gallery">
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 01
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-group-membership-remove-user-01.JPG"
+                            alt="Removing user from Finance security group for lab simulation"
+                        >
+
+                        <figcaption>
+                            Lab setup: removed the Finance security
+                            group to simulate an incorrect
+                            membership configuration.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 02
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-user-login-02.JPG"
+                            alt="Finance user logged into CLIENT01"
+                        >
+
+                        <figcaption>
+                            Authenticated as the affected user
+                            on CLIENT01.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 03
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-shared-folder-access-denied-03.JPG"
+                            alt="Finance user denied access to shared folder"
+                        >
+
+                        <figcaption>
+                            Confirmed the reported issue by
+                            reproducing the Finance share access failure.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 04
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-verify-missing-group-membership-04.JPG"
+                            alt="Finance security group missing from user membership"
+                        >
+
+                        <figcaption>
+                            Reviewed the user's account and identified
+                            the missing Finance security-group membership.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 05
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-restore-group-membership-05.JPG"
+                            alt="Finance security group restored in Active Directory"
+                        >
+
+                        <figcaption>
+                            Restored GG_Finance_Users membership
+                            to the affected account.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 06
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-verify-group-membership-06.JPG"
+                            alt="Finance group verified using whoami groups"
+                        >
+
+                        <figcaption>
+                            Reauthenticated and used whoami /groups
+                            to verify that the updated Windows
+                            security token included the Finance group.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="ticket-image">
+
+                        <span class="ticket-step">
+                            STEP 07
+                        </span>
+
+                        <img
+                            src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-shared-folder-access-restored-07.JPG"
+                            alt="Finance shared folder access successfully restored"
+                        >
+
+                        <figcaption>
+                            Confirmed that the user could access
+                            the Finance departmental share again.
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </details>
+
+    </div>
+
+</section>
 
         <section class="project-section">
 
