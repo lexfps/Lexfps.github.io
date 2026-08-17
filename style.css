@@ -1841,9 +1841,13 @@ footer {
 .ticket-step {
     display: block;
 
-    margin: 18px 18px 14px;
+    margin: 20px 16px 16px;
+    padding: 0;
 
-    color: var(--cyan);
+    border: none;
+    background: transparent;
+
+    color: #22d3ee !important;
 
     font-size: 0.68rem;
     font-weight: 900;
@@ -1853,4 +1857,15 @@ footer {
 
 .ticket-image img {
     margin-top: 10px;
+}
+
+
+/* =========================================================
+   DISABLED / IN-PROGRESS PROJECT LINKS
+   ========================================================= */
+
+.project-link-disabled {
+    opacity: 0.55;
+    cursor: default;
+    pointer-events: none;
 }
