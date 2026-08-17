@@ -1840,20 +1840,21 @@ footer {
 
 .ticket-step {
     display: block;
-    width: fit-content;
 
-    margin: 14px 16px 10px;
-    padding: 5px 10px;
+    margin: 20px 16px 16px;
+    padding: 0;
 
-    border: 1px solid rgba(56, 189, 248, 0.35);
-    border-radius: 999px;
-
-    background: rgba(56, 189, 248, 0.08);
+    border: none;
+    background: transparent;
 
     color: var(--cyan);
 
-    font-size: 0.65rem;
-    font-weight: 800;
-    letter-spacing: 0.1em;
+    font-size: 0.68rem;
+    font-weight: 900;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
+}
+
+.ticket-step + img {
+    margin-top: 4px;
 }
