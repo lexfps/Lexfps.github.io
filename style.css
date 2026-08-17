@@ -1841,11 +1841,7 @@ footer {
 .ticket-step {
     display: block;
 
-    margin: 20px 16px 16px;
-    padding: 0;
-
-    border: none;
-    background: transparent;
+    margin: 18px 18px 14px;
 
     color: var(--cyan);
 
@@ -1855,6 +1851,6 @@ footer {
     text-transform: uppercase;
 }
 
-.ticket-step + img {
-    margin-top: 4px;
+.ticket-image img {
+    margin-top: 10px;
 }
