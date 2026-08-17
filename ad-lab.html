@@ -9,7 +9,14 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Active Directory Lab | Alexis</title>
+    <meta
+        name="description"
+        content="Active Directory Help Desk Lab by Alexis Coston featuring Windows Server, Active Directory, DNS, Group Policy, Windows domain administration, and Tier 1 troubleshooting."
+    >
+
+    <title>
+        Active Directory Help Desk Lab | Alexis Coston
+    </title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,21 +28,15 @@
         <nav class="navbar">
 
             <a href="index.html" class="logo">
-                Alexis
+                Alexis Coston<span>.</span>
             </a>
 
             <div class="nav-links">
-
                 <a href="index.html#about">About</a>
-
                 <a href="index.html#projects">Projects</a>
-
                 <a href="index.html#skills">Skills</a>
-
                 <a href="index.html#education">Education</a>
-
                 <a href="index.html#contact">Contact</a>
-
             </div>
 
         </nav>
@@ -52,27 +53,33 @@
             </p>
 
             <h1>
-                Windows Server Active Directory Lab
+                Active Directory Help Desk Lab
             </h1>
 
             <p class="project-introduction">
-
-                I designed and configured a virtual Windows Server
-                environment using Oracle VirtualBox to gain hands-on
-                experience with Active Directory Domain Services,
-                user account administration, Group Policy, domain
-                authentication, and Windows security controls.
-
+                I built a virtualized Windows domain environment using
+                Windows Server 2022 and Windows 10 in Oracle VirtualBox.
+                The lab simulates a small business IT environment and
+                provides hands-on experience with Active Directory,
+                DNS, Group Policy, user and group administration,
+                shared resources, domain authentication, and common
+                Tier 1 help desk troubleshooting scenarios.
             </p>
 
             <div class="project-buttons">
 
-                <a href="index.html#projects" class="btn">
+                <a
+                    href="index.html#projects"
+                    class="button primary-button"
+                >
                     ← Back to Portfolio
                 </a>
 
-                <a href="#screenshots" class="btn secondary-btn">
-                    View Screenshots
+                <a
+                    href="#implementation"
+                    class="button secondary-button"
+                >
+                    View Lab
                 </a>
 
             </div>
@@ -82,24 +89,28 @@
 
         <section class="project-section">
 
-            <h2>Project Overview</h2>
+            <p class="section-label">
+                Overview
+            </p>
+
+            <h2>
+                Project Objective
+            </h2>
 
             <p>
-
-                This project simulates a small business Active Directory
-                environment. I installed Windows Server, configured Active
-                Directory Domain Services and DNS, created and managed domain
-                users, applied account security policies, and tested domain
-                authentication.
-
+                The goal of this project was to build a functional
+                Windows Active Directory environment and practice
+                administrative and troubleshooting tasks commonly
+                performed by help desk and desktop support technicians.
             </p>
 
             <p>
-
-                The purpose of the lab was to develop practical Windows
-                administration skills commonly used in help desk, desktop
-                support, system administration, and IT support positions.
-
+                I configured a Windows Server domain controller,
+                created an Active Directory domain, provisioned users
+                and security groups, joined a Windows workstation to
+                the domain, configured Group Policy and shared resources,
+                and then intentionally created common support issues
+                to diagnose and resolve.
             </p>
 
         </section>
@@ -107,78 +118,122 @@
 
         <section class="project-section">
 
-            <h2>Technologies Used</h2>
+            <p class="section-label">
+                Lab Environment
+            </p>
 
-            <div class="skills-grid">
+            <h2>
+                Environment & Technologies
+            </h2>
+
+            <div class="project-tech-grid">
 
                 <span>Windows Server 2022</span>
-
+                <span>Windows 10</span>
                 <span>Oracle VirtualBox</span>
-
                 <span>Active Directory</span>
-
-                <span>Active Directory Domain Services</span>
-
+                <span>AD DS</span>
                 <span>DNS</span>
-
                 <span>Group Policy</span>
-
-                <span>Windows Client</span>
-
+                <span>NTFS Permissions</span>
+                <span>Security Groups</span>
                 <span>Command Prompt</span>
 
             </div>
 
+
+            <div class="lab-details">
+
+                <div class="lab-detail-card">
+                    <span>Domain</span>
+                    <strong>corp.alexislab.local</strong>
+                </div>
+
+                <div class="lab-detail-card">
+                    <span>Domain Controller</span>
+                    <strong>DC01</strong>
+                </div>
+
+                <div class="lab-detail-card">
+                    <span>DC01 IP Address</span>
+                    <strong>192.168.10.10</strong>
+                </div>
+
+                <div class="lab-detail-card">
+                    <span>Domain Client</span>
+                    <strong>CLIENT01</strong>
+                </div>
+
+            </div>
+
         </section>
 
 
         <section class="project-section">
 
-            <h2>Skills Demonstrated</h2>
+            <p class="section-label">
+                Technical Experience
+            </p>
+
+            <h2>
+                Skills Demonstrated
+            </h2>
 
             <ul class="project-list">
 
                 <li>
-                    Installed and configured Windows Server 2022 in
-                    Oracle VirtualBox.
-                </li>
-
-                <li>
                     Installed Active Directory Domain Services and promoted
-                    the server to a domain controller.
+                    Windows Server 2022 to a domain controller.
                 </li>
 
                 <li>
-                    Configured DNS services for the Active Directory domain.
+                    Configured static IPv4 addressing and DNS services
+                    for the domain controller.
                 </li>
 
                 <li>
-                    Created and managed domain user accounts.
+                    Created organizational units for departments,
+                    workstations, groups, and disabled users.
                 </li>
 
                 <li>
-                    Configured password complexity and password expiration
-                    requirements.
+                    Provisioned and administered Active Directory
+                    user accounts.
                 </li>
 
                 <li>
-                    Configured account lockout policies to improve security.
+                    Created security groups and implemented
+                    group-based resource access.
                 </li>
 
                 <li>
-                    Applied logon-hour restrictions to user accounts.
+                    Joined a Windows 10 workstation to the
+                    Active Directory domain.
                 </li>
 
                 <li>
-                    Disabled, locked, unlocked, and restored user accounts.
+                    Configured password and account-lockout
+                    policies through Group Policy.
                 </li>
 
                 <li>
-                    Tested domain authentication using a Windows client.
+                    Configured shared-folder and NTFS permissions.
                 </li>
 
                 <li>
-                    Verified domain users through Command Prompt.
+                    Deployed a mapped network drive using Group
+                    Policy Preferences and item-level targeting.
+                </li>
+
+                <li>
+                    Performed password resets, account unlocks,
+                    employee onboarding, and employee offboarding.
+                </li>
+
+                <li>
+                    Diagnosed DNS and resource-access issues using
+                    ipconfig, ping, nslookup, whoami, gpupdate,
+                    and gpresult.
                 </li>
 
             </ul>
@@ -188,231 +243,543 @@
 
         <section
             class="project-section"
-            id="screenshots"
+            id="implementation"
         >
 
-            <h2>Project Screenshots</h2>
+            <p class="section-label">
+                Implementation
+            </p>
+
+            <h2>
+                Building the Environment
+            </h2>
 
             <p class="gallery-introduction">
-
-                The screenshots below document the major configuration
-                and testing stages of the project.
-
+                These screenshots document the major configuration
+                and verification stages of the Active Directory lab.
             </p>
 
 
-            <div class="project-gallery">
+            <div class="project-stage">
 
+                <div class="stage-heading">
 
-                <article class="gallery-card">
+                    <span class="stage-number">
+                        Stage 01
+                    </span>
 
-                    <img
-                        src="images/server-manager.png"
-                        alt="Windows Server Manager dashboard"
-                    >
+                    <h3>
+                        Domain Controller & Network Configuration
+                    </h3>
 
-                    <div class="gallery-card-content">
+                    <p>
+                        Prepared DC01, configured networking, deployed
+                        Active Directory Domain Services, and verified DNS.
+                    </p>
 
-                        <h3>Windows Server Manager</h3>
+                </div>
 
-                        <p>
-                            Windows Server environment used to install and
-                            manage Active Directory Domain Services and DNS.
-                        </p>
 
-                    </div>
+                <div class="project-gallery">
 
-                </article>
+                    <article class="gallery-card">
 
+                        <img
+                            src="images/active-directory/01-dc01-server-name.JPG"
+                            alt="Windows Server renamed to DC01"
+                        >
 
-                <article class="gallery-card">
+                        <div class="gallery-card-content">
 
-                    <img
-                        src="images/ad-users.png"
-                        alt="Active Directory Users and Computers"
-                    >
+                            <span class="gallery-step">
+                                Server Configuration
+                            </span>
 
-                    <div class="gallery-card-content">
+                            <h3>
+                                DC01 Server Name
+                            </h3>
 
-                        <h3>Active Directory Users</h3>
+                            <p>
+                                Renamed the Windows Server system to DC01
+                                in preparation for configuring it as the
+                                lab domain controller.
+                            </p>
 
-                        <p>
-                            Created and managed domain accounts using Active
-                            Directory Users and Computers.
-                        </p>
+                        </div>
 
-                    </div>
+                    </article>
 
-                </article>
 
+                    <article class="gallery-card">
 
-                <article class="gallery-card">
+                        <img
+                            src="images/active-directory/02-dc01-static-ip.JPG"
+                            alt="DC01 static IP verified using ipconfig"
+                        >
 
-                    <img
-                        src="images/group-policy.png"
-                        alt="Group Policy Management console"
-                    >
+                        <div class="gallery-card-content">
 
-                    <div class="gallery-card-content">
+                            <span class="gallery-step">
+                                Network Configuration
+                            </span>
 
-                        <h3>Group Policy Management</h3>
+                            <h3>
+                                Static IPv4 Configuration
+                            </h3>
 
-                        <p>
-                            Used Group Policy Management to configure and
-                            review domain security settings.
-                        </p>
+                            <p>
+                                Configured and verified DC01 with the
+                                static IPv4 address 192.168.10.10 and
+                                appropriate DNS settings.
+                            </p>
 
-                    </div>
+                        </div>
 
-                </article>
+                    </article>
 
 
-                <article class="gallery-card">
+                    <article class="gallery-card">
 
-                    <img
-                        src="images/password-policy.png"
-                        alt="Active Directory password policy"
-                    >
+                        <img
+                            src="images/active-directory/03-ad-ds-installation.JPG"
+                            alt="Active Directory Domain Services installed"
+                        >
 
-                    <div class="gallery-card-content">
+                        <div class="gallery-card-content">
 
-                        <h3>Password Policy</h3>
+                            <span class="gallery-step">
+                                Active Directory
+                            </span>
 
-                        <p>
-                            Configured password length, complexity, history,
-                            and expiration requirements.
-                        </p>
+                            <h3>
+                                AD DS Installation
+                            </h3>
 
-                    </div>
+                            <p>
+                                Installed Active Directory Domain Services
+                                and prepared DC01 for promotion to a
+                                domain controller.
+                            </p>
 
-                </article>
+                        </div>
 
+                    </article>
 
-                <article class="gallery-card">
 
-                    <img
-                        src="images/account-lockout.png"
-                        alt="Active Directory account lockout policy"
-                    >
+                    <article class="gallery-card">
 
-                    <div class="gallery-card-content">
+                        <img
+                            src="images/active-directory/04-active-directory-domain.JPG"
+                            alt="Active Directory Users and Computers showing corp.alexislab.local"
+                        >
 
-                        <h3>Account Lockout Policy</h3>
+                        <div class="gallery-card-content">
 
-                        <p>
-                            Configured failed-login thresholds and account
-                            lockout duration to strengthen account security.
-                        </p>
+                            <span class="gallery-step">
+                                Domain Deployment
+                            </span>
 
-                    </div>
+                            <h3>
+                                Active Directory Domain
+                            </h3>
 
-                </article>
+                            <p>
+                                Verified the corp.alexislab.local domain
+                                using Active Directory Users and Computers.
+                            </p>
 
+                        </div>
 
-                <article class="gallery-card">
+                    </article>
 
-                    <img
-                        src="images/logon-hours.png"
-                        alt="Active Directory user logon hours"
-                    >
 
-                    <div class="gallery-card-content">
+                    <article class="gallery-card featured-gallery-card">
 
-                        <h3>Logon-Hour Restrictions</h3>
+                        <img
+                            src="images/active-directory/05-dns-verification.JPG"
+                            alt="DNS verification using nslookup and ping"
+                        >
 
-                        <p>
-                            Restricted a domain user's access to approved
-                            login hours.
-                        </p>
+                        <div class="gallery-card-content">
 
-                    </div>
+                            <span class="gallery-step">
+                                DNS
+                            </span>
 
-                </article>
+                            <h3>
+                                DNS Verification
+                            </h3>
 
+                            <p>
+                                Used nslookup and ping to confirm that
+                                dc01.corp.alexislab.local successfully
+                                resolved to 192.168.10.10.
+                            </p>
 
-                <article class="gallery-card">
+                        </div>
 
-                    <img
-                        src="images/disabled-account.png"
-                        alt="Disabled Active Directory user account"
-                    >
+                    </article>
 
-                    <div class="gallery-card-content">
+                </div>
 
-                        <h3>Disabled User Account</h3>
+            </div>
 
-                        <p>
-                            Practiced disabling an account as part of the
-                            user account lifecycle process.
-                        </p>
 
-                    </div>
+            <div class="project-stage">
 
-                </article>
+                <div class="stage-heading">
 
+                    <span class="stage-number">
+                        Stage 02
+                    </span>
 
-                <article class="gallery-card">
+                    <h3>
+                        Active Directory Administration
+                    </h3>
 
-                    <img
-                        src="images/locked-account.png"
-                        alt="Locked Active Directory user account"
-                    >
+                    <p>
+                        Organized the directory and configured users
+                        and role-based security groups.
+                    </p>
 
-                    <div class="gallery-card-content">
+                </div>
 
-                        <h3>Locked User Account</h3>
 
-                        <p>
-                            Tested account lockout behavior after repeated
-                            unsuccessful login attempts.
-                        </p>
+                <div class="project-gallery">
 
-                    </div>
+                    <article class="gallery-card">
 
-                </article>
+                        <img
+                            src="images/active-directory/06-organizational-units.JPG"
+                            alt="Active Directory organizational unit structure"
+                        >
 
+                        <div class="gallery-card-content">
 
-                <article class="gallery-card">
+                            <span class="gallery-step">
+                                Directory Organization
+                            </span>
 
-                    <img
-                        src="images/domain-login.png"
-                        alt="Windows domain login screen"
-                    >
+                            <h3>
+                                Organizational Units
+                            </h3>
 
-                    <div class="gallery-card-content">
+                            <p>
+                                Created OUs for IT, Human Resources,
+                                Finance, Sales, Workstations, Groups,
+                                and Disabled Users.
+                            </p>
 
-                        <h3>Domain Authentication</h3>
+                        </div>
 
-                        <p>
-                            Successfully signed in to a Windows client using
-                            Active Directory domain credentials.
-                        </p>
+                    </article>
 
-                    </div>
 
-                </article>
+                    <article class="gallery-card">
 
+                        <img
+                            src="images/active-directory/07-it-user-accounts.JPG"
+                            alt="IT user accounts in Active Directory"
+                        >
 
-                <article class="gallery-card">
+                        <div class="gallery-card-content">
 
-                    <img
-                        src="images/net-user-domain.png"
-                        alt="Net user domain command output"
-                    >
+                            <span class="gallery-step">
+                                User Administration
+                            </span>
 
-                    <div class="gallery-card-content">
+                            <h3>
+                                Domain User Accounts
+                            </h3>
 
-                        <h3>Command-Line Verification</h3>
+                            <p>
+                                Created employee domain accounts and
+                                organized users within their appropriate
+                                department OUs.
+                            </p>
 
-                        <p>
-                            Used the net user /domain command to verify
-                            domain users and connectivity.
-                        </p>
+                        </div>
 
-                    </div>
+                    </article>
 
-                </article>
 
+                    <article class="gallery-card featured-gallery-card">
+
+                        <img
+                            src="images/active-directory/08-security-group-membership.JPG"
+                            alt="Active Directory IT security group membership"
+                        >
+
+                        <div class="gallery-card-content">
+
+                            <span class="gallery-step">
+                                Access Control
+                            </span>
+
+                            <h3>
+                                Security Group Membership
+                            </h3>
+
+                            <p>
+                                Assigned the IT user to GG_IT_Users
+                                to provide role-based access to IT
+                                department resources.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-stage">
+
+                <div class="stage-heading">
+
+                    <span class="stage-number">
+                        Stage 03
+                    </span>
+
+                    <h3>
+                        Group Policy & Shared Resources
+                    </h3>
+
+                    <p>
+                        Applied domain policies and configured
+                        security-group-based access to shared resources.
+                    </p>
+
+                </div>
+
+
+                <div class="project-gallery">
+
+                    <article class="gallery-card">
+
+                        <img
+                            src="images/active-directory/09-group-policy-membership.JPG"
+                            alt="Group Policy successfully updated"
+                        >
+
+                        <div class="gallery-card-content">
+
+                            <span class="gallery-step">
+                                Group Policy
+                            </span>
+
+                            <h3>
+                                Group Policy Deployment
+                            </h3>
+
+                            <p>
+                                Applied updated Group Policy settings
+                                and verified successful computer and user
+                                policy processing using gpupdate /force.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card featured-gallery-card">
+
+                        <img
+                            src="images/active-directory/10-it-share-permissions.JPG"
+                            alt="IT shared folder permissions for GG_IT_Users"
+                        >
+
+                        <div class="gallery-card-content">
+
+                            <span class="gallery-step">
+                                File Permissions
+                            </span>
+
+                            <h3>
+                                Department Share Permissions
+                            </h3>
+
+                            <p>
+                                Configured IT share permissions using
+                                GG_IT_Users instead of assigning access
+                                directly to individual users.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-stage">
+
+                <div class="stage-heading">
+
+                    <span class="stage-number">
+                        Stage 04
+                    </span>
+
+                    <h3>
+                        Client Deployment & Validation
+                    </h3>
+
+                    <p>
+                        Joined CLIENT01 to the domain and verified
+                        authentication, permissions, mapped drives,
+                        and Group Policy processing.
+                    </p>
+
+                </div>
+
+
+                <div class="project-gallery">
+
+                    <article class="gallery-card featured-gallery-card">
+
+                        <img
+                            src="images/active-directory/11-client01-domain-join.JPG"
+                            alt="CLIENT01 successfully joined to corp.alexislab.local"
+                        >
+
+                        <div class="gallery-card-content">
+
+                            <span class="gallery-step">
+                                Domain Integration
+                            </span>
+
+                            <h3>
+                                CLIENT01 Domain Join
+                            </h3>
+
+                            <p>
+                                Successfully joined the Windows 10
+                                workstation CLIENT01 to the
+                                corp.alexislab.local domain.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card featured-gallery-card">
+
+                        <img
+                            src="images/active-directory/12-domain-user-authentication.JPG"
+                            alt="Domain user authentication verified with whoami"
+                        >
+
+                        <div class="gallery-card-content">
+
+                            <span class="gallery-step">
+                                Authentication
+                            </span>
+
+                            <h3>
+                                Domain User Login
+                            </h3>
+
+                            <p>
+                                Signed into CLIENT01 using Active Directory
+                                credentials and verified the authenticated
+                                identity using whoami.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <img
+                            src="images/active-directory/13-access-control-test.JPG"
+                            alt="IT user denied access to HR shared folder"
+                        >
+
+                        <div class="gallery-card-content">
+
+                            <span class="gallery-step">
+                                Authorization Testing
+                            </span>
+
+                            <h3>
+                                Access Control Test
+                            </h3>
+
+                            <p>
+                                Confirmed that an IT user was correctly
+                                denied access to the restricted HR
+                                departmental share.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card featured-gallery-card">
+
+                        <img
+                            src="images/active-directory/14-mapped-network-drive.JPG"
+                            alt="IT Department S drive mapped on CLIENT01"
+                        >
+
+                        <div class="gallery-card-content">
+
+                            <span class="gallery-step">
+                                Group Policy Preferences
+                            </span>
+
+                            <h3>
+                                Mapped Network Drive
+                            </h3>
+
+                            <p>
+                                Verified automatic deployment of the
+                                IT Department S: drive to the appropriate
+                                domain user.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card featured-gallery-card">
+
+                        <img
+                            src="images/active-directory/15-group-policy-verification.JPG"
+                            alt="IT Drive Mapping verified using gpresult"
+                        >
+
+                        <div class="gallery-card-content">
+
+                            <span class="gallery-step">
+                                Verification
+                            </span>
+
+                            <h3>
+                                Group Policy Verification
+                            </h3>
+
+                            <p>
+                                Used gpresult /r to verify that the
+                                IT Drive Mapping GPO was successfully
+                                applied to the authenticated user.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
 
             </div>
 
@@ -421,20 +788,1004 @@
 
         <section class="project-section">
 
-            <h2>Challenges and Solutions</h2>
+            <p class="section-label">
+                Tier 1 Simulation
+            </p>
+
+            <h2>
+                Help Desk Scenarios
+            </h2>
+
+            <p class="gallery-introduction">
+                After completing the environment, I intentionally
+                simulated common support issues and documented the
+                troubleshooting and resolution process for each
+                scenario. Select a ticket below to view the full workflow.
+            </p>
+
+
+            <div class="ticket-accordion">
+
+                <details class="ticket-dropdown">
+
+                    <summary>
+
+                        <div class="ticket-summary-info">
+                            <span class="ticket-number">
+                                Ticket 01
+                            </span>
+
+                            <h3>
+                                Forgotten Password
+                            </h3>
+                        </div>
+
+                        <span class="ticket-arrow">
+                            +
+                        </span>
+
+                    </summary>
+
+
+                    <div class="ticket-dropdown-content">
+
+                        <div class="ticket-details">
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Issue
+                                </strong>
+
+                                <p>
+                                    Domain user could not authenticate
+                                    after forgetting their password.
+                                </p>
+
+                            </div>
+
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Resolution
+                                </strong>
+
+                                <p>
+                                    Reset the password through Active
+                                    Directory Users and Computers and
+                                    required a password change at next logon.
+                                </p>
+
+                            </div>
+
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Verification
+                                </strong>
+
+                                <p>
+                                    Confirmed the password-change requirement
+                                    and verified successful domain login
+                                    using the new credentials.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ticket-gallery">
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/01-User-Forgot-Password/ticket-01-password-reset-login-error-01.JPG"
+                                    alt="User unable to authenticate with incorrect password"
+                                >
+
+                                <figcaption>
+                                    Reproduced the reported authentication
+                                    issue on CLIENT01.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/01-User-Forgot-Password/ticket-01-password-reset-ad-reset-02.JPG"
+                                    alt="Password reset through Active Directory Users and Computers"
+                                >
+
+                                <figcaption>
+                                    Reset the user's domain password and
+                                    required a password change at next logon.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/01-User-Forgot-Password/ticket-01-password-reset-change-password-03.JPG"
+                                    alt="Windows requiring password change before sign in"
+                                >
+
+                                <figcaption>
+                                    Verified that the temporary-password
+                                    requirement was enforced.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/01-User-Forgot-Password/ticket-01-password-reset-successful-login-04.JPG"
+                                    alt="Successful login after password reset"
+                                >
+
+                                <figcaption>
+                                    Confirmed successful authentication
+                                    after the password change.
+                                </figcaption>
+
+                            </figure>
+
+                        </div>
+
+                    </div>
+
+                </details>
+
+
+                <details class="ticket-dropdown">
+
+                    <summary>
+
+                        <div class="ticket-summary-info">
+
+                            <span class="ticket-number">
+                                Ticket 02
+                            </span>
+
+                            <h3>
+                                Account Lockout
+                            </h3>
+
+                        </div>
+
+                        <span class="ticket-arrow">
+                            +
+                        </span>
+
+                    </summary>
+
+
+                    <div class="ticket-dropdown-content">
+
+                        <div class="ticket-details">
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Issue
+                                </strong>
+
+                                <p>
+                                    User account became locked after
+                                    multiple unsuccessful login attempts.
+                                </p>
+
+                            </div>
+
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Resolution
+                                </strong>
+
+                                <p>
+                                    Located the account in Active Directory,
+                                    confirmed the lockout, and manually
+                                    unlocked the account.
+                                </p>
+
+                            </div>
+
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Verification
+                                </strong>
+
+                                <p>
+                                    Confirmed that the user could
+                                    successfully authenticate again.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ticket-gallery">
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/02-Account-Lockout/ticket-02-account-lockout-01.JPG"
+                                    alt="Windows account lockout message"
+                                >
+
+                                <figcaption>
+                                    Confirmed that the account was locked
+                                    after multiple failed authentication attempts.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/02-Account-Lockout/ticket-02-account-lockout-02.JPG"
+                                    alt="Active Directory account unlock option"
+                                >
+
+                                <figcaption>
+                                    Identified the locked account in ADUC
+                                    and restored account access.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/02-Account-Lockout/ticket-02-account-lockout-03.JPG"
+                                    alt="User successfully logged in after account unlock"
+                                >
+
+                                <figcaption>
+                                    Verified successful authentication
+                                    after the account was unlocked.
+                                </figcaption>
+
+                            </figure>
+
+                        </div>
+
+                    </div>
+
+                </details>
+
+
+                <details class="ticket-dropdown">
+
+                    <summary>
+
+                        <div class="ticket-summary-info">
+
+                            <span class="ticket-number">
+                                Ticket 03
+                            </span>
+
+                            <h3>
+                                Employee Offboarding
+                            </h3>
+
+                        </div>
+
+                        <span class="ticket-arrow">
+                            +
+                        </span>
+
+                    </summary>
+
+
+                    <div class="ticket-dropdown-content">
+
+                        <div class="ticket-details">
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Request
+                                </strong>
+
+                                <p>
+                                    Employee account required deactivation
+                                    and removal of existing department access.
+                                </p>
+
+                            </div>
+
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Resolution
+                                </strong>
+
+                                <p>
+                                    Disabled the Active Directory account,
+                                    moved it to the Disabled Users OU,
+                                    and removed department security-group
+                                    membership.
+                                </p>
+
+                            </div>
+
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Result
+                                </strong>
+
+                                <p>
+                                    Account was deactivated and access
+                                    associated with the employee's former
+                                    department was removed.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ticket-gallery">
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/03-Disabled-Account/ticket-03-offboarding-01.JPG"
+                                    alt="Active Directory user account disabled"
+                                >
+
+                                <figcaption>
+                                    Disabled the employee's domain account
+                                    to prevent further authentication.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/03-Disabled-Account/ticket-03-offboarding-02.JPG"
+                                    alt="Account moved to Disabled Users OU"
+                                >
+
+                                <figcaption>
+                                    Moved the account into the Disabled Users
+                                    organizational unit.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/03-Disabled-Account/ticket-03-offboarding-03.JPG"
+                                    alt="Removing employee from department security group"
+                                >
+
+                                <figcaption>
+                                    Removed the employee from the department
+                                    security group to revoke role-based access.
+                                </figcaption>
+
+                            </figure>
+
+                        </div>
+
+                    </div>
+
+                </details>
+
+
+                <details class="ticket-dropdown">
+
+                    <summary>
+
+                        <div class="ticket-summary-info">
+
+                            <span class="ticket-number">
+                                Ticket 04
+                            </span>
+
+                            <h3>
+                                New Employee Onboarding
+                            </h3>
+
+                        </div>
+
+                        <span class="ticket-arrow">
+                            +
+                        </span>
+
+                    </summary>
+
+
+                    <div class="ticket-dropdown-content">
+
+                        <div class="ticket-details">
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Request
+                                </strong>
+
+                                <p>
+                                    New IT employee required a domain
+                                    account and access to appropriate
+                                    department resources.
+                                </p>
+
+                            </div>
+
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Configuration
+                                </strong>
+
+                                <p>
+                                    Created the account in the IT OU,
+                                    assigned GG_IT_Users membership,
+                                    and configured domain authentication.
+                                </p>
+
+                            </div>
+
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Verification
+                                </strong>
+
+                                <p>
+                                    Confirmed successful login, access
+                                    to the IT share, and denial of
+                                    unauthorized HR resources.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ticket-gallery">
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-create-user-01.JPG"
+                                    alt="Creating Miles Morales Active Directory account"
+                                >
+
+                                <figcaption>
+                                    Created the new employee account
+                                    in the IT organizational unit.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-add-security-group-02.JPG"
+                                    alt="Adding new employee to IT security group"
+                                >
+
+                                <figcaption>
+                                    Added the employee to GG_IT_Users
+                                    for role-based department access.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-domain-login-03.JPG"
+                                    alt="New employee successfully logged in to CLIENT01"
+                                >
+
+                                <figcaption>
+                                    Verified successful Active Directory
+                                    authentication from CLIENT01.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-it-drive-access-04.JPG"
+                                    alt="New employee accessing IT department mapped drive"
+                                >
+
+                                <figcaption>
+                                    Confirmed access to the mapped
+                                    IT Department network drive.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/04-New-Employee-Onboarding/ticket-04-onboarding-hr-access-denied-05.JPG"
+                                    alt="IT employee denied access to HR shared folder"
+                                >
+
+                                <figcaption>
+                                    Verified least-privilege access by
+                                    confirming the IT employee could not
+                                    access the restricted HR share.
+                                </figcaption>
+
+                            </figure>
+
+                        </div>
+
+                    </div>
+
+                </details>
+
+
+                <details class="ticket-dropdown">
+
+                    <summary>
+
+                        <div class="ticket-summary-info">
+
+                            <span class="ticket-number">
+                                Ticket 05
+                            </span>
+
+                            <h3>
+                                DNS Resolution Issue
+                            </h3>
+
+                        </div>
+
+                        <span class="ticket-arrow">
+                            +
+                        </span>
+
+                    </summary>
+
+
+                    <div class="ticket-dropdown-content">
+
+                        <div class="ticket-details">
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Issue
+                                </strong>
+
+                                <p>
+                                    CLIENT01 was unable to resolve
+                                    the domain controller hostname.
+                                </p>
+
+                            </div>
+
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Troubleshooting
+                                </strong>
+
+                                <p>
+                                    Used nslookup and network settings
+                                    to identify an incorrect DNS server
+                                    configured on the client.
+                                </p>
+
+                            </div>
+
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Resolution
+                                </strong>
+
+                                <p>
+                                    Restored 192.168.10.10 as the DNS
+                                    server and verified successful
+                                    name resolution to DC01.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ticket-gallery">
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/05-DNS-Issue/ticket-05-dns-wrong-server-01.JPG"
+                                    alt="CLIENT01 configured with incorrect DNS server"
+                                >
+
+                                <figcaption>
+                                    Simulated the issue by configuring
+                                    CLIENT01 with an incorrect DNS server.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/05-DNS-Issue/ticket-05-dns-lookup-failed-02.JPG"
+                                    alt="DNS lookup failing in nslookup"
+                                >
+
+                                <figcaption>
+                                    Used nslookup to verify that DNS
+                                    name resolution was failing.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/05-DNS-Issue/ticket-05-dns-correct-server-03.JPG"
+                                    alt="Correct DNS server restored on CLIENT01"
+                                >
+
+                                <figcaption>
+                                    Corrected the client DNS configuration
+                                    to point to DC01 at 192.168.10.10.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/05-DNS-Issue/ticket-05-dns-lookup-success-04.JPG"
+                                    alt="Successful DNS lookup after troubleshooting"
+                                >
+
+                                <figcaption>
+                                    Verified successful resolution of
+                                    dc01.corp.alexislab.local after
+                                    correcting the configuration.
+                                </figcaption>
+
+                            </figure>
+
+                        </div>
+
+                    </div>
+
+                </details>
+
+
+                <details class="ticket-dropdown">
+
+                    <summary>
+
+                        <div class="ticket-summary-info">
+
+                            <span class="ticket-number">
+                                Ticket 06
+                            </span>
+
+                            <h3>
+                                Shared Folder Access / Group Membership
+                            </h3>
+
+                        </div>
+
+                        <span class="ticket-arrow">
+                            +
+                        </span>
+
+                    </summary>
+
+
+                    <div class="ticket-dropdown-content">
+
+                        <div class="ticket-details">
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Issue
+                                </strong>
+
+                                <p>
+                                    Finance user was unable to access
+                                    the department shared folder.
+                                </p>
+
+                            </div>
+
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Troubleshooting
+                                </strong>
+
+                                <p>
+                                    Reviewed Active Directory group
+                                    membership and determined that the
+                                    user was missing GG_Finance_Users.
+                                </p>
+
+                            </div>
+
+
+                            <div class="ticket-detail">
+
+                                <strong>
+                                    Resolution
+                                </strong>
+
+                                <p>
+                                    Restored the security-group membership,
+                                    refreshed the user's authentication
+                                    session, and verified access.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ticket-gallery">
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-group-membership-remove-user-01.JPG"
+                                    alt="Removing user from Finance security group for lab simulation"
+                                >
+
+                                <figcaption>
+                                    Lab setup: removed the Finance security
+                                    group to simulate an incorrect
+                                    membership configuration.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-user-login-02.JPG"
+                                    alt="Finance user logged into CLIENT01"
+                                >
+
+                                <figcaption>
+                                    Authenticated as the affected user
+                                    on CLIENT01.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-shared-folder-access-denied-03.JPG"
+                                    alt="Finance user denied access to shared folder"
+                                >
+
+                                <figcaption>
+                                    Confirmed the reported issue by
+                                    reproducing the Finance share access failure.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-verify-missing-group-membership-04.JPG"
+                                    alt="Finance security group missing from user membership"
+                                >
+
+                                <figcaption>
+                                    Reviewed the user's account and identified
+                                    the missing Finance security-group membership.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-restore-group-membership-05.JPG"
+                                    alt="Finance security group restored in Active Directory"
+                                >
+
+                                <figcaption>
+                                    Restored GG_Finance_Users membership
+                                    to the affected account.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-verify-group-membership-06.JPG"
+                                    alt="Finance group verified using whoami groups"
+                                >
+
+                                <figcaption>
+                                    Reauthenticated and used whoami /groups
+                                    to verify that the updated Windows
+                                    security token included the Finance group.
+                                </figcaption>
+
+                            </figure>
+
+
+                            <figure class="ticket-image">
+
+                                <img
+                                    src="images/helpdesk-tickets/06-Wrong-Group-Membership/ticket-06-shared-folder-access-restored-07.JPG"
+                                    alt="Finance shared folder access successfully restored"
+                                >
+
+                                <figcaption>
+                                    Confirmed that the user could access
+                                    the Finance departmental share again.
+                                </figcaption>
+
+                            </figure>
+
+                        </div>
+
+                    </div>
+
+                </details>
+
+            </div>
+
+        </section>
+
+
+        <section class="project-section">
+
+            <p class="section-label">
+                Troubleshooting Tools
+            </p>
+
+            <h2>
+                Commands Used
+            </h2>
+
+            <div class="command-grid">
+
+                <div class="command-card">
+                    <code>ipconfig /all</code>
+                    <span>
+                        Reviewed client IP and DNS configuration.
+                    </span>
+                </div>
+
+                <div class="command-card">
+                    <code>ping</code>
+                    <span>
+                        Tested IP connectivity between systems.
+                    </span>
+                </div>
+
+                <div class="command-card">
+                    <code>nslookup</code>
+                    <span>
+                        Tested DNS name resolution.
+                    </span>
+                </div>
+
+                <div class="command-card">
+                    <code>whoami</code>
+                    <span>
+                        Verified the currently authenticated identity.
+                    </span>
+                </div>
+
+                <div class="command-card">
+                    <code>whoami /groups</code>
+                    <span>
+                        Verified the user's current security groups.
+                    </span>
+                </div>
+
+                <div class="command-card">
+                    <code>gpupdate /force</code>
+                    <span>
+                        Forced Group Policy processing.
+                    </span>
+                </div>
+
+                <div class="command-card">
+                    <code>gpresult /r</code>
+                    <span>
+                        Verified applied Group Policy Objects.
+                    </span>
+                </div>
+
+                <div class="command-card">
+                    <code>ipconfig /flushdns</code>
+                    <span>
+                        Cleared the local DNS resolver cache.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="project-section">
+
+            <p class="section-label">
+                Problem Solving
+            </p>
+
+            <h2>
+                Challenges & Solutions
+            </h2>
+
 
             <div class="challenge-card">
 
-                <h3>Applying Security Policies</h3>
+                <h3>
+                    Separating Connectivity From DNS Resolution
+                </h3>
 
                 <p>
-
-                    One challenge was understanding how domain policies
-                    affect user accounts and authentication. I reviewed the
-                    Group Policy settings, updated the policies, tested the
-                    user account behavior, and confirmed whether each policy
-                    worked as expected.
-
+                    During the DNS troubleshooting scenario, CLIENT01
+                    retained direct IP connectivity to DC01 while DNS
+                    name resolution was intentionally broken. I used
+                    nslookup and the client's IPv4 configuration to
+                    isolate the problem to DNS rather than treating
+                    it as a complete network outage.
                 </p>
 
             </div>
@@ -442,15 +1793,40 @@
 
             <div class="challenge-card">
 
-                <h3>Testing Account Lockout</h3>
+                <h3>
+                    Group Membership Not Updating Immediately
+                </h3>
 
                 <p>
+                    After restoring a user's Finance security-group
+                    membership, the group did not immediately appear
+                    in the user's current Windows session. I confirmed
+                    the account configuration in Active Directory and
+                    completely signed the user out before authenticating
+                    again.
+                </p>
 
-                    I tested the account lockout policy by intentionally
-                    entering incorrect credentials. After confirming that
-                    the account became locked, I used Active Directory Users
-                    and Computers to restore access.
+                <p>
+                    The new logon generated an updated security token,
+                    and GG_Finance_Users then appeared successfully
+                    when verified with whoami /groups.
+                </p>
 
+            </div>
+
+
+            <div class="challenge-card">
+
+                <h3>
+                    Verifying Group Policy Deployment
+                </h3>
+
+                <p>
+                    Rather than assuming the mapped-drive policy had
+                    applied correctly, I used gpupdate /force and
+                    gpresult /r on CLIENT01 to verify that the
+                    IT Drive Mapping GPO was actually being processed
+                    for the intended user.
                 </p>
 
             </div>
@@ -460,24 +1836,29 @@
 
         <section class="project-section">
 
-            <h2>What I Learned</h2>
+            <p class="section-label">
+                Reflection
+            </p>
+
+            <h2>
+                What I Learned
+            </h2>
 
             <p>
-
-                This project strengthened my understanding of Active
-                Directory administration, Windows Server management,
-                enterprise authentication, account security, and Group
-                Policy.
-
+                This lab strengthened my understanding of how
+                Active Directory, DNS, Group Policy, Windows
+                authentication, security groups, and shared resources
+                interact within a domain environment.
             </p>
 
             <p>
-
-                I also gained more confidence navigating Windows Server
-                tools, troubleshooting account access, and documenting
-                technical work in a way that can be understood by other IT
-                professionals.
-
+                Troubleshooting intentionally created problems also
+                helped me practice isolating an issue before making
+                changes. I gained hands-on experience distinguishing
+                DNS problems from general connectivity problems,
+                investigating permissions through group membership,
+                verifying Group Policy application, and resolving
+                common user-account issues.
             </p>
 
         </section>
@@ -485,15 +1866,23 @@
 
         <section class="project-section project-navigation">
 
-            <h2>Explore More Projects</h2>
+            <h2>
+                Explore More Projects
+            </h2>
 
             <div class="project-buttons">
 
-                <a href="index.html#projects" class="btn">
+                <a
+                    href="index.html#projects"
+                    class="button primary-button"
+                >
                     View All Projects
                 </a>
 
-                <a href="packet-tracer.html" class="btn secondary-btn">
+                <a
+                    href="packet-tracer.html"
+                    class="button secondary-button"
+                >
                     View Networking Lab
                 </a>
 
@@ -507,7 +1896,7 @@
     <footer class="site-footer">
 
         <p>
-            © 2026 Alexis. Built with HTML and CSS.
+            © 2026 Alexis Coston. Built with HTML and CSS.
         </p>
 
     </footer>
